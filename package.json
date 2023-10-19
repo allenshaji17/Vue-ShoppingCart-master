@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "start": "nodemon server.js",
-    "deploy": "gh-pages -d dist",
+    "deploy": "vue-cli-service build --mode production && gh-pages -d dist",
     "dev": "concurrently \"npm:start\" \"npm:serve --fix\"",
     "dev:build": "vue-cli-service build --mode development",
     "build": "vue-cli-service build",
